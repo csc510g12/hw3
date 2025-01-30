@@ -1,17 +1,21 @@
-[project]
+[tool.poetry]
 name = "hw3"
 version = "0.1.0"
-description = "se25 group 12 hw3"
-authors = [
-    {name = "VisualDust",email = "gavin@gong.host"}
-]
-license = {text = "MIT"}
+description = ""
+authors = ["VisualDust <gavin@gong.host>"]
+license = "MIT"
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+black = "^25.1.0"
+pre-commit = "^4.1.0"
+pytest = "^8.3.4"
+pylint = "^3.3.4"
+pyflakes = "^3.2.0"
+bandit = "^1.8.2"
 
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

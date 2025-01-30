@@ -1,4 +1,4 @@
-import hw3.src.rand as rand
+import hw3.rand as rand
 
 def mergeSort(arr):
     if (len(arr) == 1):
