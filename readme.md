@@ -37,7 +37,7 @@ Task done by:
 
 Task done by:
 
-- [ ] `zgong6`
+- [x] `zgong6` added pytest for [`None` input](tests/test_none_input.py), [empty list](tests/test_empty_input.py), and a [list with one element](tests/test_single_element_input.py)
 - [ ] `azkuang2`
 - [ ] `opdesai2`
 
