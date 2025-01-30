@@ -2,9 +2,11 @@
 
 ## Task: Run Static Analysis Tools
 
-- [ ] pylint (general static analysis and code quality)
-- [ ] pyflakes (error detection)
-- [ ] bandit (security vulnerabilities)
+Add package to dependencies:
+
+- [x] pylint (general static analysis and code quality)
+- [x] pyflakes (error detection)
+- [x] bandit (security vulnerabilities)
 - [ ] radon (complexity analysis)
 
 
