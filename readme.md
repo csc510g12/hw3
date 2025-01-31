@@ -21,7 +21,6 @@ poetry run pre-commit install
 5. commit your changes
 6. if pre-commit hooks fail, such as blocked by prettier, add your files again and commit
 
-````bash
 
 ## Task: Run Static Analysis Tools
 
