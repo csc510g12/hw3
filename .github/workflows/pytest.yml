@@ -1,7 +1,7 @@
 name: Run pytest
 
 on:
-  push
+  push:
   pull_request:
     types:
       - opened
