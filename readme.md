@@ -71,7 +71,12 @@ Task done by:
 
 ## Task: Merge all branches
 
-## Task: Configure automated testing to run on every commit
+## Task: Configure github actions
 
+
+1. Configure automated testing to run on every commit
 - [x] Assigned to @visualDust
   - [x] Done
+
+2. Configure static analysis tools running on every commit
+- [ ] Not assigned yet
