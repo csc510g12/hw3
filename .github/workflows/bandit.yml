@@ -30,3 +30,9 @@ jobs:
 
       - name: Run pre-commit hooks
         run: pre-commit run --all-files
+
+      - name: Auto-fix Prettier issues
+        run: |
+          pre-commit run --all-files || true
+          git diff --quiet || (git config --global user.name "github-actions" && git config --global user.email "github-actions@github.com" && git commit -am "Apply Prettier formatting" && git push)
+
