@@ -65,7 +65,7 @@ jobs:
       # install your root project
       #----------------------------------------------
       - name: Install project
-        working-directory: ${{ github.workspace }}
+        working-directory: /home/runner/work/hw3
         run: poetry install --no-interaction
 
       #----------------------------------------------
