@@ -42,3 +42,8 @@ repos:
     hooks:
       - id: prettier
         files: .*\.(js|jsx|ts|tsx|json|yml|yaml|md)$
+  - repo: https://github.com/PyCQA/bandit
+    rev: "latest"
+    hooks:
+      - id: bandit
+        args: ["-ll", "-ii"]
