@@ -66,7 +66,7 @@ Task done by:
 Task done by:
 
 - [x] `zgong6` added pytest for [`None` input](tests/test_none_input.py), [empty list](tests/test_empty_input.py), and a [list with one element](tests/test_single_element_input.py)
-- [x] `azkuang2` added pytest for [Two inputs with six elements each](tests/test_six_elements.py)
+- [x] `azkuang2` added pytest for [Two inputs with six elements each](tests/test_six_elements.py), added bandit to test code pre-commit
 - [ ] `opdesai2`
 
 ## Task: Merge all branches
