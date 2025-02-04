@@ -31,12 +31,4 @@ jobs:
       - name: Run pre-commit hooks
         run: pre-commit run --all-files || true
 
-      - name: Auto-fix and push formatting changes
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git add .
-          git commit -m "Apply automatic formatting (pre-commit)" || exit 0  # No changes? Skip commit
-          git push
-
 
