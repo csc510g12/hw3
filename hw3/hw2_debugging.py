@@ -2,7 +2,7 @@ import hw3.rand as rand
 
 def mergeSort(arr):
     # print(f"Array: {arr}")
-    if (len(arr) == 1):
+    if (len(arr) == 1) or len(arr) == 0:
         return arr
 
     half = len(arr)//2
