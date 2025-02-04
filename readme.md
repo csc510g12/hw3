@@ -1,26 +1,54 @@
 # Homework 3
 
+## Configure
+
+1. clone the repository
+
+2. install dependencies via poetry
+
+```bash
+poetry install
+```
+
+3. install pre-commit hooks
+
+```bash
+poetry run pre-commit install
+```
+
+4. do your tasks
+
+5. commit your changes
+6. if pre-commit hooks fail, such as blocked by prettier, add your files again and commit
+
+
 ## Task: Run Static Analysis Tools
 
 Add package to dependencies:
 
+- [x] black (code formatting)
+  - [x] added to pre commit
 - [x] pylint (general static analysis and code quality)
+  - [x] added to pre commit
 - [x] pyflakes (error detection)
 - [x] bandit (security vulnerabilities)
 - [ ] radon (complexity analysis)
-
+- [x] prettier (code formatting for web development)
+  - [x] added to pre commit
 
 ## Task: Create your own branch
 
 1. Add extra code (any algorithm with issues; the algorithm should be different from your group members’). It is recommended that students implement the algorithm by hand rather than copying an example online. This approach will help reinforce the understanding of debugging techniques, which are key learning objectives of this assignment.
 
 2. Run tools on all files:
+
 ```bash
 pylint hw2_debugging.py rand.py > pylint_report.txt
 pyflakes hw2_debugging.py rand.py > pyflakes_report.txt
-```
+````
 
 3. Fix issues reported by static analysis
+
    - Correct coding style violations, security concerns, and potential logical errors.
    - Ensure that all fixes maintain the intended functionality.
 
@@ -29,7 +57,7 @@ pyflakes hw2_debugging.py rand.py > pyflakes_report.txt
 
 Task done by:
 
-- [ ] `zgong6`
+- [x] `zgong6`
 - [ ] `azkuang2`
 - [ ] `opdesai2`
 
@@ -43,6 +71,15 @@ Task done by:
 
 ## Task: Merge all branches
 
-## Task: Configure automated testing to run on every commit
+## Task: Configure github actions
+
+
+1. Configure automated testing to run on every commit
+- [x] Assigned to @visualDust
+  - [x] Done
 
 - [ ] Assigned to @visualDust
+
+2. Configure static analysis tools running on every commit
+- [ ] Not assigned yet
+
