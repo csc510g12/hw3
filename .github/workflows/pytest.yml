@@ -65,6 +65,7 @@ jobs:
       # install your root project
       #----------------------------------------------
       - name: Install project
+        working-directory: ${{ github.workspace }}
         run: poetry install --no-interaction
 
       #----------------------------------------------
