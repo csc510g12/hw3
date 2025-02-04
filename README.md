@@ -81,5 +81,6 @@ Task done by:
 - [ ] Assigned to @visualDust
 
 2. Configure static analysis tools running on every commit
-- [ ] Not assigned yet
+- [x] Assigned to @azkuang
+  - [x] Added Bandit   
 
