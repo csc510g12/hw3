@@ -80,6 +80,7 @@ Task done by:
 
 - [x] Bandit added by @azkuang
 - [x] Pylint added by @visualDust
+- [x] Pyflakes (flake8) added by @odesai840
 
 Now you can see output of those tools in workflow outputs.
 ![image](https://github.com/user-attachments/assets/3274ec8f-b038-4ce9-acd6-10a2f8801de1)
