@@ -66,7 +66,7 @@ Task done by:
 
 - [x] `zgong6` added pytest for [`None` input](tests/test_none_input.py), [empty list](tests/test_empty_input.py), and a [list with one element](tests/test_single_element_input.py)
 - [x] `azkuang2` added pytest for [Two inputs with six elements each](tests/test_six_elements.py), added bandit to test code pre-commit
-- [ ] `opdesai2`
+- [x] `opdesai2` added pytest for [Duplicates in input](tests/test_duplicate_input.py) and [Negative inputs](tests/test_negative_input.py)
 
 ## Task: Merge all branches
 
@@ -80,6 +80,7 @@ Task done by:
 
 - [x] Bandit added by @azkuang
 - [x] Pylint added by @visualDust
+- [x] Pyflakes (flake8) added by @odesai840
 
 Now you can see output of those tools in workflow outputs.
 ![image](https://github.com/user-attachments/assets/3274ec8f-b038-4ce9-acd6-10a2f8801de1)
