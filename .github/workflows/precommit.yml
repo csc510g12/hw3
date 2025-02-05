@@ -36,5 +36,5 @@ jobs:
       - name: Upload pre-commit output
         uses: actions/upload-artifact@v4
         with:
-          name: precommit-logs
+          name: precommit-logs-${{ github.run_attempt }}
           path: precommit_output.log
