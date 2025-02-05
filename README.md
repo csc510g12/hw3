@@ -30,7 +30,9 @@ Add package to dependencies:
 - [x] pylint (general static analysis and code quality)
   - [x] added to pre commit
 - [x] pyflakes (error detection)
+  - [x] added to pre commit
 - [x] bandit (security vulnerabilities)
+  - [x] added to pre commit
 - [ ] radon (complexity analysis)
 - [x] prettier (code formatting for web development)
   - [x] added to pre commit
