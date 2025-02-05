@@ -21,7 +21,6 @@ poetry run pre-commit install
 5. commit your changes
 6. if pre-commit hooks fail, such as blocked by prettier, add your files again and commit
 
-
 ## Task: Run Static Analysis Tools
 
 Add package to dependencies:
@@ -45,7 +44,7 @@ Add package to dependencies:
 ```bash
 pylint hw2_debugging.py rand.py > pylint_report.txt
 pyflakes hw2_debugging.py rand.py > pyflakes_report.txt
-````
+```
 
 3. Fix issues reported by static analysis
 
@@ -73,14 +72,14 @@ Task done by:
 
 ## Task: Configure github actions
 
-
 1. Configure automated testing to run on every commit
-- [x] Assigned to @visualDust
-  - [x] Done
 
-- [ ] Assigned to @visualDust
+- [x] Added pytest by @visualDust
 
-2. Configure static analysis tools running on every commit
-- [x] Assigned to @azkuang
-  - [x] Added Bandit   
+1. Configure static analysis tools running on every commit
 
+- [x] Bandit added by @azkuang
+- [x] Pylint added by @visualDust
+
+Now you can see output of those tools in workflow outputs.
+![image](https://github.com/user-attachments/assets/3274ec8f-b038-4ce9-acd6-10a2f8801de1)
