@@ -35,31 +35,6 @@ Add package to dependencies:
 - [x] prettier (code formatting for web development)
   - [x] added to pre commit
 
-## Task: Create your own branch
-
-1. Add extra code (any algorithm with issues; the algorithm should be different from your group members’). It is recommended that students implement the algorithm by hand rather than copying an example online. This approach will help reinforce the understanding of debugging techniques, which are key learning objectives of this assignment.
-
-2. Run tools on all files:
-
-```bash
-pylint hw2_debugging.py rand.py > pylint_report.txt
-pyflakes hw2_debugging.py rand.py > pyflakes_report.txt
-```
-
-3. Fix issues reported by static analysis
-
-   - Correct coding style violations, security concerns, and potential logical errors.
-   - Ensure that all fixes maintain the intended functionality.
-
-4. Re-run the Tools: After fixing issues, rerun each tool and save the updated results inside a post_traces folder.
-5. After fixing the code, commit changes to your repository.
-
-Task done by:
-
-- [x] `zgong6`
-- [ ] `azkuang2`
-- [ ] `opdesai2`
-
 ## Task: Write 3 test cases for merge sort using pytest
 
 Task done by:
@@ -68,16 +43,9 @@ Task done by:
 - [x] `azkuang2` added pytest for [Two inputs with six elements each](tests/test_six_elements.py), added bandit to test code pre-commit
 - [x] `opdesai2` added pytest for [Duplicates in input](tests/test_duplicate_input.py) and [Negative inputs](tests/test_negative_input.py)
 
-## Task: Merge all branches
-
 ## Task: Configure github actions
 
-1. Configure automated testing to run on every commit
-
 - [x] Added pytest by @visualDust
-
-1. Configure static analysis tools running on every commit
-
 - [x] Bandit added by @azkuang
 - [x] Pylint added by @visualDust
 - [x] Pyflakes (flake8) added by @odesai840
