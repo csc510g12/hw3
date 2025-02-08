@@ -71,5 +71,5 @@ jobs:
       - name: Upload pre-commit output
         uses: actions/upload-artifact@v4
         with:
-          name: precommit-logs-${{ github.run_id }}-${{ github.run_attempt }}-${{ matrix.os }}
+          name: precommit-logs-${{ github.run_id }}-${{ github.run_attempt }}-${{ matrix.os }}-{{ matrix.python-version }}
           path: precommit_output.log
