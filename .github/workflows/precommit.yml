@@ -15,7 +15,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        os: [ubuntu-latest]
         python-version: ["3.10"]
 
     steps:
@@ -64,12 +64,15 @@ jobs:
       - name: Install project
         run: poetry install --no-interaction
 
+      - name: Install pre-commit
+        run: poetry run pip install pre-commit
+
       - name: Run pre-commit hooks and capture output
         run: |
-          pre-commit run --all-files --verbose | tee precommit_output.log || true
+          poetry run pre-commit run --all-files --verbose | tee precommit_output.log || true
 
       - name: Upload pre-commit output
         uses: actions/upload-artifact@v4
         with:
-          name: precommit-logs-${{ github.run_id }}-${{ github.run_attempt }}-${{ matrix.os }}-{{ matrix.python-version }}
+          name: precommit-logs-${{ github.run_id }}-${{ github.run_attempt }}-${{ matrix.os }}-${{ matrix.python-version }}
           path: precommit_output.log
