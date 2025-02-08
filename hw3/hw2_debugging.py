@@ -1,51 +1,52 @@
-import hw3.rand as rand
+from hw3 import rand
 
-def mergeSort(arr):
+
+def merge_sort(arr):
     # print(f"Array: {arr}")
     if (len(arr) == 1) or len(arr) == 0:
         return arr
 
-    half = len(arr)//2
+    half = len(arr) // 2
 
     # print(f"{arr[:half], arr[half:]}")
 
-    return recombine(mergeSort(arr[:half]), mergeSort(arr[half:]))
+    return recombine(merge_sort(arr[:half]), merge_sort(arr[half:]))
 
-def recombine(leftArr, rightArr):
-    leftIndex = 0
-    rightIndex = 0
-    # mergeArr = [None] * (len(leftArr) + len(rightArr))
-    mergeArr = []
-    # print(f"mergeArr (before): {mergeArr}")
-    while leftIndex < len(leftArr) and rightIndex < len(rightArr):
-        # print(f"{leftArr}, {rightArr}")
-        # print(f"Left index: {leftIndex}, Right index: {rightIndex}")
-        # print(f"Right Array: {rightArr[rightIndex]}")
-        # print(f"Left Array: {leftArr[leftIndex]}")
-        # if leftArr[leftIndex] < rightArr[rightIndex]:
-        #     rightIndex += 1
-        #     mergeArr[leftIndex + rightIndex] = leftArr[leftIndex]
+
+def recombine(left_arr, right_arr):
+    left_index = 0
+    right_index = 0
+    # merge_arr = [None] * (len(left_arr) + len(right_arr))
+    merge_arr = []
+    # print(f"merge_arr (before): {merge_arr}")
+    while left_index < len(left_arr) and right_index < len(right_arr):
+        # print(f"{left_arr}, {right_arr}")
+        # print(f"Left index: {left_index}, Right index: {right_index}")
+        # print(f"Right Array: {right_arr[right_index]}")
+        # print(f"Left Array: {left_arr[left_index]}")
+        # if left_arr[left_index] < right_arr[right_index]:
+        #     right_index += 1
+        #     merge_arr[left_index + right_index] = left_arr[left_index]
         # else:
-        #     leftIndex += 1
-        #     mergeArr[leftIndex + rightIndex] = rightArr[rightIndex]
-        if leftArr[leftIndex] < rightArr[rightIndex]:
-            mergeArr.append(leftArr[leftIndex])
-            leftIndex += 1
+        #     left_index += 1
+        #     merge_arr[left_index + right_index] = right_arr[right_index]
+        if left_arr[left_index] < right_arr[right_index]:
+            merge_arr.append(left_arr[left_index])
+            left_index += 1
         else:
-            mergeArr.append(rightArr[rightIndex])
-            rightIndex += 1
-    
-    mergeArr.extend(rightArr[rightIndex:])
-    mergeArr.extend(leftArr[leftIndex:])
+            merge_arr.append(right_arr[right_index])
+            right_index += 1
 
-    # print(f"Merge Array: {mergeArr}")
-    return mergeArr
+    merge_arr.extend(right_arr[right_index:])
+    merge_arr.extend(left_arr[left_index:])
 
-arr = rand.random_array([None] * 6)
+    # print(f"Merge Array: {merge_arr}")
+    return merge_arr
+
+
+test_arr = rand.random_array([None] * 6)
 # arr = [3, 9, 16, 2, 8, 3]
-print(f"Starting Array: {arr}")
-arr_out = mergeSort(arr)
+print(f"Starting Array: {test_arr}")
+arr_out = merge_sort(test_arr)
 
 print(arr_out)
-
-
