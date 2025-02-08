@@ -37,6 +37,8 @@ Add package to dependencies:
 - [x] prettier (code formatting for web development)
   - [x] added to pre commit
 
+![image](https://github.com/user-attachments/assets/0da62c59-e1e2-44d6-afb8-98b4f69511d5)
+
 ## Task: Write 3 test cases for merge sort using pytest
 
 Task done by:
@@ -51,6 +53,7 @@ Task done by:
 - [x] Bandit added by @azkuang
 - [x] Pylint added by @visualDust
 - [x] Pyflakes (flake8) added by @odesai840
+
 
 Now you can see output of those tools in workflow outputs.
 ![image](https://github.com/user-attachments/assets/3274ec8f-b038-4ce9-acd6-10a2f8801de1)
